@@ -31,11 +31,11 @@ jobs:
 
       - name: Build APK
         run: |
-          cd Aurora.launcher.rp
+          cd AuroraLauncher
           ./gradlew assembleDebug --stacktrace
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
           name: AuroraRoleplay-APK
-          path: Aurora.launcher.rp/app/build/outputs/apk/debug/app-debug.apk
+          path: AuroraLauncher/app/build/outputs/apk/debug/app-debug.apk
